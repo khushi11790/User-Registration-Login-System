@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.navbar h2 {
+    color: #764ba2;
+}
+
+.logout-btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+}
+
+.welcome-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.welcome-card {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 45px 35px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.welcome-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.welcome-card h1 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 15px;
+}
+
+.user-info {
+    background: #f4f1fb;
+    padding: 18px;
+    margin: 25px 0;
+    border-radius: 12px;
+}
+
+.user-info p {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.user-info h3 {
+    color: #764ba2;
+    font-size: 17px;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(102,126,234,0.4);
+}
+
+@media(max-width: 480px) {
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .welcome-card {
+        padding: 35px 22px;
+    }
+}
